@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルサイト</title>
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f9f9f9;
+    }
+
+    header{
+        background-color: #007bff;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul{
+        padding: 0;
+    }
+    nav ul li{
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    main{
+        padding: 20px;
+        text-align: center;
+    }
+
+    form{
+        max-width: 400px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label, input, textarea, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button{
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ようこそ！サンプルサイトへ
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html">問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>このサイトについて</h2>
+            <p>このサイトは、HTML・CSSの基本を学ぶためのサンプルサイトです。</p>
+        </section>
+    </main>
+    <footer>
+        <p>&COPY; 2024 サンプルサイト</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問い合わせ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>    問い合わせフォーム</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index.html">問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>お問い合わせはこちら</h2>
+            <form action="submit.php" method="post">
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージ</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 サンプルサイト</p>
+    </footer>
+</body>
+</html>
