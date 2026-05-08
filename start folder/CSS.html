@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCSテスト</title>
+    <title>CSSテスト</title>
     <style>
         body {
             background-color: #e6e6fa; 
@@ -11,10 +11,61 @@
             margin: 0;
             padding: 20px;
             }
-            
+        
+            h1 {
+            background-color: #6495ed; 
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+            h2 {
+            background-color: #daa520; 
+            color: black;
+            padding: 5px 10px;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+        
+        .content {
+            background-color: #fffaf0; 
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .contact-text {
+            color: #32cd32; 
+        }
+        .profile-img {
+            width: 200px;
+        }
+
     </style>
 </head>
 <body>
-    
+    <h1>自己紹介</h1>
+
+    <h2>基本情報</h2>
+    <div>
+        <p>こんにちは！私は山田太郎です。趣味は読書と旅行です。</p>
+    </div>
+    <h2>好きなこと</h2>
+    <div class="content">
+        <ul>
+            <li>プログラミング</li>
+            <li>ゲーム</li>
+            <li>スポーツ観戦</li>
+            </ul>
+    </div>
+
+    <h2>プロフィール画像</h2>
+    <div class="content">
+        <!-- 画像ファイル名はご自身の環境に合わせて変更してください -->
+        <img src="baseball_player.png" alt="野球をする人" class="profile-img">
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <div class="content">
+        <p class="contact-text">ご連絡は以下のメールアドレスまでお願いします。</p>
+        <p class="contact-text">メール: example@example.com</p>
+    </div>
 </body>
 </html>
